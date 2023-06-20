@@ -119,3 +119,8 @@ td{
     border: 5px solid brown;
     text-align: center;
 }
+.insertword{
+    position: fixed;
+    top: 12px;
+    left: 332px;
+}

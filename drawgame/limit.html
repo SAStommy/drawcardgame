@@ -274,6 +274,30 @@
         function back(){
             window.location.href="index.html"
         }
+        function insertword(){
+            var url = "insertword.html";
+            url += "?count=" + count;
+            url += "&totalPT=" + totalPT;
+            url += "&collection=" + collection;
+            url += "&coin=" + coin;
+            url += "&face=" + face;
+            url += "&eface=" + eface;
+            url += "&draw=" + draw;
+            url += "&edraw=" + edraw;
+            url += "&press=" + press;
+            url += "&cprice=" + cprice;
+            url += "&pprice=" + pprice;
+            url += "&fprice=" + fprice;
+            url += "&extracoin=" + extracoin;
+            url += "&extrapt=" + extrapt;
+            url += "&round=" + round;
+            url += "&fdraw=" + fdraw;
+            url += "&maxcard=" + maxcard;
+            url += "&F5=" + F5;
+            url += "&player=" + encodeURIComponent(JSON.stringify(player));
+            window.location.href = url;
+
+        }
         function shop(){
             var url = "shop.html";
             url += "?count=" + count;
@@ -526,7 +550,8 @@
     <button class="train" onclick="usecard()">功能卡</button>
     <button class="collection" onclick="engcard()">已收集的英文卡</button>
     <button class="shop" onclick="shop()">商店</button>
+    <button class="insertword" onclick="insertword()">新增英文字</button>
     <div class="base">
-        <h2 class="modepick" onclick="back()">遊戲完結</h2>
+        <h2 class="modepick" onclick="back()">遊戲完結</h2S>
     </div>
 </body>
