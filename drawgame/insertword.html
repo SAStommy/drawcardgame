@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <title>drawcard</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="common.css">    
+</head>
+<style>
+    td{ 
+        justify-content: center; 
+        vertical-align: top;
+        background-color:cornsilk;
+        border: 5px solid brown;
+        text-align: center;
+    }
+    .modepick{
+        user-select: none;
+        border-style: outset;
+        border-width: medium;
+        color:cornsilk;
+        transition: border-style 0.5s linear;
+    }
+    .modepick:active{
+        border-style: inset;
+    }
+
+</style>
+<script>
+    var urlParams = new URLSearchParams(window.location.search);
+    var count = parseInt(urlParams.get('count'));
+    var totalPT = parseInt(urlParams.get('totalPT'));
+    var collection = parseInt(urlParams.get('collection'));
+    var coin = parseInt(urlParams.get('coin'));
+    var face = parseInt(urlParams.get('face'));
+    var eface = parseInt(urlParams.get('eface'));
+    var draw = parseInt(urlParams.get('draw'));
+    var edraw = parseInt(urlParams.get('edraw'));
+    var press = parseInt(urlParams.get('press'));
+    var cprice = parseInt(urlParams.get('cprice'));
+    var pprice = parseInt(urlParams.get('pprice'));
+    var fprice = parseInt(urlParams.get('fprice'));
+    var extracoin = parseInt(urlParams.get('extracoin'));
+    var extrapt = parseInt(urlParams.get('extrapt'));
+    var round = parseInt(urlParams.get('round'));
+    var maxcard = parseInt(urlParams.get('maxcard'));
+    var player = JSON.parse(decodeURIComponent(urlParams.get('player')));
+    var fdraw = parseInt(urlParams.get('fdraw'));
+    var F5 = parseInt(urlParams.get('F5'));
